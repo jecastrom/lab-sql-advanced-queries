@@ -6,6 +6,7 @@
 :description:
 :script-url: https://github.com/jecastrom/data_2.07_activities/blob/7abfb6a0375c2c4ad3021f3f9a388a495142e1a8/files_for_actitity/act%202.07%20solutions.sql
 //:fn-xxx: Add the explanation foot note here bla bla
+:relcont: https://github.com/jecastrom/data_3.06_activities.git
 :toc:
 :toc-title: Lab description: In this lab, you will be using the Sakila database of movie rentals.
 :toc-placement!:
@@ -52,7 +53,7 @@ image::{image-url-ironhack}[width=70]
 
 {my-name}
 
-
+{relcont}[Activity 3.06]
                                                      
 ====
 ''''
@@ -76,7 +77,7 @@ toc::[]
 ''''
 ====
 
-{script-url}[Solutions script only]
+{relcont}[Activity 3.06]
 
 ====
 ''''
