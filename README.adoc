@@ -150,9 +150,9 @@ image::https://user-images.githubusercontent.com/63274055/152260562-a0534a20-f62
 
 
 
-xref:Lab-xxxx[Top Section]
+xref:Lab-SQL-Advanced-Queries[Top Section]
 
-xref:Last-section[Bottom section]
+
 
 //bla bla blafootnote:[{fn-xxx}]
 
