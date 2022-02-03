@@ -53,7 +53,7 @@ image::{image-url-ironhack}[width=70]
 
 {my-name}
 
-{relcont}[Activity 3.06]
+{relcont}[Related content: Activity 3.06]
                                                      
 ====
 ''''
@@ -141,7 +141,7 @@ image::https://user-images.githubusercontent.com/63274055/152260562-a0534a20-f62
 ''''
 ====
 
-{relcont}[Activity 3.06]
+{relcont}[Related content: Activity 3.06]
 
 ====
 ''''
