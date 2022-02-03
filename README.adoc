@@ -96,6 +96,38 @@ image::https://user-images.githubusercontent.com/63274055/152258775-c6d20788-566
 
 === For each film, list actor that has acted in more films.
 
+`*_Answer:_*`
+
+```sql
+WITH cte_1 AS (
+    SELECT
+        film_id,
+        actor_id,
+        count(film_id) films_made,
+        rank() over (
+            PARTITION by film_id
+            ORDER BY
+                count(film_id) DESC
+        ) AS `rank`
+    FROM
+        film_actor
+    GROUP BY
+        actor_id
+)
+SELECT
+    title,
+    concat(first_name, ' ', last_name) AS actor,
+    films_made
+FROM
+    cte_1 c
+    JOIN actor a ON c.actor_id = a.actor_id
+    JOIN film f ON c.film_id = f.film_id
+WHERE
+    `rank` = 1;
+```
+
+image::https://user-images.githubusercontent.com/63274055/152260562-a0534a20-f625-41d0-a6e9-011f8018ed5f.png[width=600]
+
 
 
 
