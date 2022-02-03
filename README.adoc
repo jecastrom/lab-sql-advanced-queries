@@ -120,8 +120,8 @@ SELECT
     films_made
 FROM
     cte_1 c
-    JOIN actor a ON c.actor_id = a.actor_id
-    JOIN film f ON c.film_id = f.film_id
+    INNER JOIN actor a ON c.actor_id = a.actor_id
+    INNER JOIN film f ON c.film_id = f.film_id
 WHERE
     `rank` = 1;
 ```
